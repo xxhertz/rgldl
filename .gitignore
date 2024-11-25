@@ -3,3 +3,4 @@
 build.exe.obj
 build.exe
 build.pdb
+/zig-out
