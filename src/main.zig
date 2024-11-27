@@ -12,8 +12,7 @@ const maps = [_][]const u8{ "pl_vigil_rc10.bsp", "koth_ashville_final1.bsp", "ko
 const downloadUrl = "https://dl.serveme.tf/maps/{s}";
 
 fn println(comptime fmt: []const u8, args: anytype) void {
-    std.debug.print(fmt, args);
-    std.debug.print("\n", .{});
+    std.debug.print(fmt ++ "\n", args);
 }
 
 fn findString(text: []const u8, find: []const u8) isize {
