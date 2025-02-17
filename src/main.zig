@@ -22,6 +22,6 @@ pub fn main() !void {
     try pool.init(.{ .allocator = allocator });
     defer pool.deinit();
 
-    for (maps) |map|
+    inline for (maps) |map|
         try pool.spawn(safe_download, .{ allocator, tf2_maps_dir, map });
 }
